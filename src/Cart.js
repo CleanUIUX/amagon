@@ -1,11 +1,24 @@
 import React from "react";
-import Product from "./Product";
+import Subtotal from "./Subtotal";
+import '../src/cart.css'
 
 
 function Cart() {
     return(
         <div className="cart">
-            <h1>장바구니페이지 입니다.</h1>
+            <div className="cart_left">
+                <img className="cart_ad" src="" alt="" />
+
+                <div>
+                    <h2 className="cart_title">장바구니입니다</h2>
+
+                    {/* 장바구니아이템 */}
+                </div>
+            </div>
+
+            <div className="cart_right">
+                <Subtotal />
+            </div>
         </div>
     )
 }

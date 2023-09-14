@@ -5,7 +5,9 @@ import {Link} from "react-router-dom";
 function Header() {
     return(
         <div className="header">
-            <img className="header_logo" src={process.env.REACT_APP_PUBLIC_URL + 'logo512.png'} />
+            <Link to='/'>
+                <img className="header_logo" src={process.env.REACT_APP_PUBLIC_URL + 'logo512.png'} />
+            </Link>
 
             <div className="header_search">
                 <input className="header_searchInput" type='text' />
@@ -15,7 +17,7 @@ function Header() {
             <div className="header_nav">
                 <div className="header_option">
                     <span className="header_optionLineOne">안녕하세요!</span>
-                    <Link to='/' className="header_optionLineTwo">home</Link>
+                    <span className="header_optionLineTwo">로그인하기</span>
                 </div>
                 <div className="header_option">
                     <span className="header_optionLineOne">돌아가기</span>
