@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 function Header() {
     return(
         <div className="header">
-            <img className="header_logo" src="" />
+            <img className="header_logo" src={process.env.REACT_APP_PUBLIC_URL + 'logo512.png'} />
 
             <div className="header_search">
                 <input className="header_searchInput" type='text' />
