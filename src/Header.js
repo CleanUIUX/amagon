@@ -9,14 +9,13 @@ function Header() {
 
             <div className="header_search">
                 <input className="header_searchInput" type='text' />
-                <searchIcon className="header_searchIcon"/>
+                <img src={process.env.REACT_APP_PUBLIC_URL + 'img/all.png'} alt='' className="header_searchIcon"/>
             </div>
 
             <div className="header_nav">
                 <div className="header_option">
                     <span className="header_optionLineOne">안녕하세요!</span>
                     <Link to='/' className="header_optionLineTwo">home</Link>
-                    <Link to='/cart' className="header_optionLineTwo">cart</Link>
                 </div>
                 <div className="header_option">
                     <span className="header_optionLineOne">돌아가기</span>
@@ -28,8 +27,8 @@ function Header() {
                 </div>
 
                 <div className="header_optionBasket">
-                    <shoppingBasket />
-                    <span className="header_optionLineBasket">0</span>
+                    <img src={process.env.REACT_APP_PUBLIC_URL + ''} alt='' />
+                    <Link to='/cart' className="header_optionLineBasket">0장바구니</Link>
                 </div>
             </div>
         </div>

@@ -30,6 +30,7 @@
 .header_searchIcon{
     height:15px;
     padding:5px;
+    background-position: 2px -280px;
     background-color:#cd9042;
 }
 .header_nav{
