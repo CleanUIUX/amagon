@@ -1,8 +1,11 @@
 import React from "react";
 import '../src/header.css'
 import {Link} from "react-router-dom";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+    const [{basket}, dispatch] = useStateValue(); 
+
     return(
         <div className="header">
             <Link to='/'>
@@ -30,7 +33,7 @@ function Header() {
 
                 <div className="header_optionBasket">
                     <img src={process.env.REACT_APP_PUBLIC_URL + ''} alt='' />
-                    <Link to='/cart' className="header_optionLineBasket">0장바구니</Link>
+                    <Link to='/cart' className="header_optionLineBasket">{basket?.length}</Link>
                 </div>
             </div>
         </div>
