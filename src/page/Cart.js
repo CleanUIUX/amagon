@@ -1,6 +1,6 @@
 import React from "react";
-import Subtotal from "./Subtotal";
-import '../src/cart.css'
+import Subtotal from "../component/Subtotal";
+import '../style/cart.css'
 
 
 function Cart() {

@@ -1,5 +1,5 @@
 import React from "react";
-import "../src/product.css"
+import "../style/product.css"
 import { useStateValue } from "./StateProvider";
 
 function Product({id, title, image, price, rating}) {
@@ -12,11 +12,12 @@ function Product({id, title, image, price, rating}) {
                 id: id,
                 title: title,
                 image: image,
+                price: price,
                 rating: rating,
             },
         });
     }
-    // console.log("장바귄 확인", basket);
+    console.log("장바귄 확인", basket);
     return(
         <div className="product">
             <div className="product_info">

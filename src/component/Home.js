@@ -1,6 +1,6 @@
 import React from "react";
 import Product from "./Product";
-import '../src/home.css'
+import '../style/home.css'
 
 function Home() {
     return(

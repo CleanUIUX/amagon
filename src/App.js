@@ -1,7 +1,7 @@
-import './App.css';
-import Header from './Header';
-import Home from './Home';
-import Cart from './Cart';
+import './style/App.css';
+import Header from './component/Header';
+import Home from './component/Home';
+import Cart from './page/Cart';
 import {HashRouter as Router, Routes, Route} from "react-router-dom";
 
 
