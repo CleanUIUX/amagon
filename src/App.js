@@ -9,6 +9,8 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Routes path='login'></Routes>
+
         <Routes>
           <Route path='/' element={<Header />}></Route>
           <Route path='cart' element={<Header />}></Route>
