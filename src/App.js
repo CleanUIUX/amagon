@@ -3,13 +3,16 @@ import Header from './component/Header';
 import Home from './component/Home';
 import Cart from './page/Cart';
 import {HashRouter as Router, Routes, Route} from "react-router-dom";
+import Login from './page/Login';
 
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes path='login'></Routes>
+        <Routes>
+          <Route path='/login' element={<Login />}></Route>
+        </Routes>
 
         <Routes>
           <Route path='/' element={<Header />}></Route>
