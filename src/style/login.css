@@ -10,3 +10,37 @@
     margin:20px auto;
     object-fit:contain;
 }
+.login_container > h1{
+    margin-bottom:40px;
+    font-weight:700;
+}
+.login_container form h5{
+    margin-bottom:5px;
+}
+.login_container form input{
+    width:98%;
+    height:30px;
+    margin-bottom:10px;
+    background-color:#fff;
+}
+.login_container p{
+    margin:15px 0 10px;
+    font-size:10px;
+}
+.login_signInButton{
+    width:100%;
+    height:30px;
+    margin-top:10px;
+    background:#61dafb;
+    border:0;
+    border-radius:2px;
+}
+.login_registerButton{
+    width:100%;
+    height:30px;
+    margin-top:10px;
+    color:#fff;
+    background:gray;
+    border:0;
+    border-radius:2px;
+}
